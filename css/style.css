@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: 'PKMN';
+  src: url('../fonts/PKMNRBYGSC.ttf') format('truetype');
+}
 html {
   color: #222;
   font-size: 1em;
@@ -15,8 +18,20 @@ html, body {
   display: flex;
   justify-content: space-around;
 }
+.titulos{
+  background-color:#d4cfcf;
+  color: black;
+  font-weight: bold;
+  font: 16px PKMN;
+  padding: 4px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 5px 5px 8px rgba(0,0,0,7);
+  border: 2px solid #a9a4a4;
+}
 header {
-  background-image: url("fondo2.jpg");
+  background-image: url("fondo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,32 +44,43 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  height: 40px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  width:100vw;
+ 
 }
+.pokeball-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: #ABABAB;
+  z-index: 1001;
+  padding-top: 20px;
+}
+
 .pokeball-nav a {
-  padding: 4px 10px;
+  padding: 15px 10px;
   text-decoration: none;
   font-weight: bold;
-  margin-right: 4px;
-  border-radius: 4px;
-}
-.pokeball-nav a:nth-child(1) {
-  background-color: red;
-  color: white;
-
-}
-
-.pokeball-nav a:nth-child(2) {
-  background-color: white;
-  color: black;
+  text-align: center;
+  border-top: #222 solid 2px;
+  border-bottom: #222 solid 2px;
+  margin: 5px 0;
+  flex: 0;
+  font: 16px PKMN;
+  color: black
 }
 
-.pokeball-nav a:nth-child(3) {
-  background-color: black;
-  color: white;
-}
+
 .pokeball-nav a:hover {
   opacity: 0.8;
+  background-color: #bfbaba;
 }
 
 .pokeball-img {
@@ -67,22 +93,24 @@ header {
 .pokeball-img:hover {
   transform: scale(1.05);
 }
-header, .pokeball-nav {
+header {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 180px;
+  width: calc(100% - 180px);
   z-index: 1000;
 }
 
 body {
-  background-image: url("fondo.jpg");
+  background-color: #DADADA;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  margin-left: 180px;
   padding-top: 120px;
   display: flex;
+  flex-direction: column;
 }
 footer {
   text-align: center;
@@ -118,15 +146,11 @@ ul{
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
-p:not(.texto-gen) {
+p:not(.titulos) {
   border-radius:999px;
   display: inline-block;
   padding: 10px 20px;
   background-color: red;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-p.texto-gen{
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
@@ -142,6 +166,21 @@ p.texto-gen{
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
+
+img {
+  border-radius: 12px;
+  box-shadow: 0 0 40px 12px rgba(0,0,0,0.6);
+  transition: box-shadow .28s ease, transform .28s ease;
+   width: 60%;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+img:hover {
+  box-shadow: 0 0 60px 20px rgba(0,0,0,0.8);
+  width: 70%;
+}
+
 
 
 
