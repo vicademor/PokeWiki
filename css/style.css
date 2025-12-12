@@ -1,0 +1,147 @@
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+html, body {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+.headerdiv{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header {
+  background-image: url("fondo2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  font-size: 3em;
+  font-weight: bold;
+  font-family:Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.pokeball-nav a {
+  padding: 4px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+.pokeball-nav a:nth-child(1) {
+  background-color: red;
+  color: white;
+
+}
+
+.pokeball-nav a:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+
+.pokeball-nav a:nth-child(3) {
+  background-color: black;
+  color: white;
+}
+.pokeball-nav a:hover {
+  opacity: 0.8;
+}
+
+.pokeball-img {
+  border: 5px solid red;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  transition: transform .3s ease;
+}
+.pokeball-img:hover {
+  transform: scale(1.05);
+}
+header, .pokeball-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  background-image: url("fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 120px;
+  display: flex;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #222;
+}
+h3{
+  border-radius:999px;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+}
+.inputDerecha{
+  display: flex;
+  justify-content: center;
+}
+.form-card{
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.45);
+}
+ul{
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+p:not(.texto-gen) {
+  border-radius:999px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+p.texto-gen{
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.gif-esquina {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.gif-esquina img {
+  width: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+
+
