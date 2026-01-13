@@ -241,6 +241,43 @@ img:hover:not(.gif-esquina img) {
   width: 70%;
 }
 
+@media (max-width: 768px){
+  .form-card{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .pokeball-nav{
+    width: 80px;
+  }
+  .pokeball-nav a{
+    font-size: 9px;
+    padding: 10px 5px;
+  }
+  header {
+    width: calc(100% + 30px);
+    left: 0;
+  }
+  body {
+    padding-right: 50px;
+    padding-left: 90px;
+    margin: 10%;
+    padding-top: 100px;
+  }
+  img:not(.gif-esquina img) {
+    width: 100%;
+    max-width: none;
+  }
+  img:hover:not(.gif-esquina img) {
+  box-shadow: 0 0 60px 20px rgba(0,0,0,0.8);
+  width: 80%;
+  }
+  footer {
+    position: relative;
+    left: -20%;
+    width: calc(100% + 60%);
+  }
 
+}
 
 
