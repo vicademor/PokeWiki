@@ -294,7 +294,7 @@ img:hover:not(.gif-esquina img) {
     left: 0;
   }
   .titulos{
-    width: 100%;
+    width: 90%;
   }
   .form-card{
     width: 90%;
@@ -308,6 +308,8 @@ img:hover:not(.gif-esquina img) {
     margin-bottom: 5%; 
     width: 80%;
   }
-
+  .texto-gen{
+    font-size: 18px;
+  }
 }
 
