@@ -257,7 +257,7 @@ img:hover:not(.gif-esquina img):not(.icono-menu) {
   background-color: #BADA55;
   border: none;
   font-size: 40px;
- 
+ position: fixed;
   margin: 0px;
   padding: 0px;
    width: 50px;
