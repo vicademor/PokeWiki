@@ -251,15 +251,21 @@ img:hover:not(.gif-esquina img):not(.icono-menu) {
   box-shadow: 0 0 60px 20px rgba(0,0,0,0.8);
   width: 70%;
 }
+
+
 .toggle-btn{
-  background-color: #ABABAB;
+  background-color: #BADA55;
   border: none;
   font-size: 40px;
-  position: fixed;
-  background-size: cover;
+ 
+  margin: 0px;
+  padding: 0px;
+   width: 50px;
+  height: 50px;
 }
+
 .icono-menu {
-  width: 20%; 
+  width: 120%; 
   height: auto;
   image-rendering: pixelated;;
 }
