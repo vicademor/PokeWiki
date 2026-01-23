@@ -308,13 +308,13 @@ img:hover:not(.gif-esquina img):not(.icono-menu) {
     box-sizing: border-box;
   }
 
-  img:not(.gif-esquina img) {
+  img:not(.gif-esquina img):not(.icono-menu) {
     width: 90%;
     max-width: 90%;
     height: auto;
   }
 
-  img:hover:not(.gif-esquina img) {
+  img:hover:not(.gif-esquina img):not(.icono-menu) {
     width: 70%;
   }
 
@@ -339,6 +339,15 @@ img:hover:not(.gif-esquina img):not(.icono-menu) {
   }
   .texto-gen{
     font-size: 18px;
+  }
+  .icono-menu{
+    width: 105%;
+  }
+  .toggle-btn{
+   width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 11%;
   }
 }
 
