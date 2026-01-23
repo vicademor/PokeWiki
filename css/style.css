@@ -246,6 +246,8 @@ img:not(.gif-esquina img):not(.icono-menu) {
   height: auto;
   display: block;
   margin: 20px auto;
+  transition: transform .6s ease-in;
+  transition: transform .6s ease-out;
 }
 img:hover:not(.gif-esquina img):not(.icono-menu) {
   box-shadow: 0 0 60px 20px rgba(0,0,0,0.8);
