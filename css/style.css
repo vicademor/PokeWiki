@@ -256,11 +256,12 @@ img:hover:not(.gif-esquina img):not(.icono-menu) {
   border: none;
   font-size: 40px;
   position: fixed;
+  background-size: cover;
 }
 .icono-menu {
   width: 20%; 
   height: auto;
-  image-rendering: pixelated;
+  image-rendering: pixelated;;
 }
 
 @media (max-width: 768px){
