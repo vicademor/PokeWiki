@@ -13,6 +13,13 @@ html, body {
   margin: 0;
   flex-direction: column;
 }
+a[href]{
+display: inline-block;
+padding: 0;
+margin: 0;
+width: auto;
+height: auto;
+}
 .headerdiv{
   width: 100%;
   display: flex;
@@ -254,8 +261,13 @@ img:hover:not(.gif-esquina img):not(.icono-menu) {
   width: 70%;
  
 }
-
-
+.dark-theme{
+  background-color: black;
+  color: white;
+}
+.dark-element{
+  background-color: #555555;
+}
 .toggle-btn{
   background-color: #BADA55;
   border: none;
@@ -265,8 +277,17 @@ img:hover:not(.gif-esquina img):not(.icono-menu) {
   padding: 0px;
    width: 50px;
   height: 50px;
+  clip-path: circle(25px);
 }
-
+.toggle-btn:hover{
+  transform:rotate(10deg);
+  animation: girar 1s ease-in-out infinite;
+}
+@keyframes girar {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(-20deg); }
+}
 .icono-menu {
   width: 120%; 
   height: auto;
